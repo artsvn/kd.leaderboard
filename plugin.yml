@@ -1,0 +1,10 @@
+name: Leaderboards
+version: 1.0.0
+author: itoozh
+main: itoozh\Leaderboards\Leaderboards
+api: 4.0.0
+
+permissions:
+  leaderboards.permission:
+    default: op
+    description: test
