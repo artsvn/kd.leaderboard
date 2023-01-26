@@ -77,7 +77,7 @@ class TopKillsEntity extends Human
         arsort($kills);
         foreach($kills as $player => $kill){
             if($place > 5) break;
-            $msg .= TextFormat::GRAY . $place . ". " . TextFormat::YELLOW . $player . " " . TextFormat::GRAY . "»" . TextFormat::RED . $kill . TextFormat::EOL;
+            $msg .= TextFormat::GRAY . $place . ". " . TextFormat::YELLOW . $player . " " . TextFormat::GRAY . "» " . TextFormat::RED . $kill . TextFormat::EOL;
             $place++;
         }
         $msg .= $line;
