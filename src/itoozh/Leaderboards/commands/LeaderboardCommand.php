@@ -30,7 +30,7 @@ class LeaderboardCommand extends Command
             $sender->sendMessage('§r§7---------------------------------------------');
             $sender->sendMessage('§r ');
             $sender->sendMessage('§r§f§lLEADER§6BOARD');
-            $sender->sendMessage('§r§6Version:§r§f 1.0.0');
+            $sender->sendMessage('§r§6Version:§r§fKITS§aCORE');
 
             $sender->sendmessage('§r§6Description:§r§f This plugin is edited and not owned by me.');
             $sender->sendMessage('§r§r ');
