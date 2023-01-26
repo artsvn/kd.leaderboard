@@ -7,4 +7,4 @@ api: 4.0.0
 permissions:
   leaderboards.permission:
     default: op
-    description: test
+    description: modified
