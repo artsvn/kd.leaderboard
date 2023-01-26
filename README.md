@@ -1,3 +1,4 @@
-# topkd
+# Leaderboard-kitscore
 
-This is not mine, all credits are for those who own this code.
+This is not mine it's modified.
+» All credits to itoozh.
