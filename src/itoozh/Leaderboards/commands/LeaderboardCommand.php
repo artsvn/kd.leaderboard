@@ -16,7 +16,7 @@ class LeaderboardCommand extends Command
 {
     public function __construct()
     {
-        parent::__construct("top", "edited by - e4fj");
+        parent::__construct("top");
         $this->setPermission('leaderboards.permission');
     }
 
@@ -29,13 +29,13 @@ class LeaderboardCommand extends Command
         if (!isset($args[0])) {
             $sender->sendMessage('§r§7---------------------------------------------');
             $sender->sendMessage('§r ');
-            $sender->sendMessage('§r§6§lTops Scoring');
+            $sender->sendMessage('§r§f§lLEADER§6BOARD');
             $sender->sendMessage('§r§6Version:§r§f 1.0.0');
-            $sender->sendMessage('§r§6Editor:§r§f e4fj');
-            $sender->sendmessage('§r§6Description:§r§f This plugin is edited and not owned by e4fj.');
+
+            $sender->sendmessage('§r§6Description:§r§f This plugin is edited and not owned by me.');
             $sender->sendMessage('§r§r ');
-            $sender->sendMessage('§r§f/top kills - §eUse this command to spawn the NPC from Kills');
-            $sender->sendMessage('§r§f/top deaths - §eUse this command to spawn the NPC from Deaths');
+            $sender->sendMessage('§r§f/top kills - §eDisplay top kills');
+            $sender->sendMessage('§r§f/top deaths -§eDisplay top deaths');
             $sender->sendMessage('§r  ');
             $sender->sendMessage('§r§7---------------------------------------------');
             return;
@@ -47,7 +47,7 @@ class LeaderboardCommand extends Command
                 }
                 $entity = TopKillsEntity::create($sender);
                 $entity->spawnToAll();
-                $sender->sendMessage(TextFormat::colorize('§r§aKills Leaderboards created successfully!'));
+                $sender->sendMessage(TextFormat::colorize('§r§aCreated successfully!'));
             }
         }
         if (strtolower($args[0]) === 'deaths') {
@@ -57,7 +57,7 @@ class LeaderboardCommand extends Command
                 }
                 $entity = TopDeathsEntity::create($sender);
                 $entity->spawnToAll();
-                $sender->sendMessage(TextFormat::colorize('§r§aDeaths Leaderboards created successfully!'));
+                $sender->sendMessage(TextFormat::colorize('§r§aCreated successfully!'));
             }
         }
     }
