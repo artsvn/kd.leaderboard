@@ -16,7 +16,7 @@ class LeaderboardCommand extends Command
 {
     public function __construct()
     {
-        parent::__construct("top");
+        parent::__construct("top", "kitscore.pckt.me | 19132");
         $this->setPermission('leaderboards.permission');
     }
 
