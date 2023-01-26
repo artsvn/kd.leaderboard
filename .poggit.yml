@@ -1,8 +1,8 @@
---- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/artsvn/topkd
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/artsvn/leaderboard-kitscore
 build-by-default: true
 branches:
 - main
 projects:
-  topkd:
+  leaderboard-kitacore:
     path: ""
 ...
