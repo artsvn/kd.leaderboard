@@ -70,16 +70,16 @@ class TopDeathsEntity extends Human
      * @return bool
      */
     public function onUpdate(int $currentTick): bool{
-        $line = "–––––x–––––x–––––";
+        $line = "–––––x–-----––––x–––––";
         $msg = $line . TextFormat::EOL;
-        $msg .= TextFormat::BOLD . TextFormat::WHITE . "TOP DEATHS" . TextFormat::EOL;
+        $msg .= TextFormat::BOLD . TextFormat::WHITE . "KITSCORE BOARD" . TextFormat::EOL;
         $msg .= TextFormat::EOL;
         $place = 1;
         $kills = Leaderboards::getDeathsAsRaw();
         arsort($kills);
         foreach($kills as $player => $kill){
             if($place > 5) break;
-            $msg .= TextFormat::GRAY . $place . ". " . TextFormat::YELLOW . $player . " " . TextFormat::GRAY . "» " . TextFormat::RED . $kill . TextFormat::EOL;
+            $msg .= TextFormat::GRAY . $place . ". " . TextFormat::YELLOW . $player . " " . TextFormat::GRAY . "» " . TextFormat::RED . $kill . TextFormat::RED . " deaths" . TextFormat::EOL;
             $place++;
         }
         $msg .= $line;
