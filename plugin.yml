@@ -1,8 +1,8 @@
-name: Leaderboards
+name: kd.leaderboard
 version: 1.0.0
 author: itoozh
 main: itoozh\Leaderboards\Leaderboards
-api: 4.0.0
+api: 4.16.0
 
 permissions:
   leaderboards.permission:
