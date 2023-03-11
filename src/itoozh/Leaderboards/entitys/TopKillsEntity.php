@@ -70,7 +70,7 @@ class TopKillsEntity extends Human
     public function onUpdate(int $currentTick): bool{
         $line = "–––––x––-----–––x–––––";
         $msg = $line . TextFormat::EOL;
-        $msg .= TextFormat::BOLD . TextFormat::WHITE . "KITSCORE BOARD" . TextFormat::EOL;
+        $msg .= TextFormat::BOLD . TextFormat::WHITE . "TOP KILLS" . TextFormat::EOL;
         $msg .= TextFormat::EOL;
         $place = 1;
         $kills = Leaderboards::getKillsAsRaw();
