@@ -16,7 +16,7 @@ class LeaderboardCommand extends Command
 {
     public function __construct()
     {
-        parent::__construct("top", "kitscore.pckt.me | 19132");
+        parent::__construct("top");
         $this->setPermission('leaderboards.permission');
     }
 
@@ -30,7 +30,7 @@ class LeaderboardCommand extends Command
             $sender->sendMessage('§r§7---------------------------------------------');
             $sender->sendMessage('§r ');
             $sender->sendMessage('§r§f§lLEADER§6BOARD');
-            $sender->sendMessage('§r§6Version:§r§fKITS§aCORE');
+            $sender->sendMessage('§r§6Version: ???');
 
             $sender->sendmessage('§r§6Description:§r§f This plugin is edited and not owned by me.');
             $sender->sendMessage('§r§r ');
