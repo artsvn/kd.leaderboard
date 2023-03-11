@@ -1,4 +1,3 @@
-# Leaderboard-kitscore
+# kd.leaderboard
 
-This is not mine it's modified.
-» All credits to itoozh.
+This code is modified to use in my server.
